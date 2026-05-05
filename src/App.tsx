@@ -22,7 +22,7 @@ enum SortType {
   ByLength,
 }
 
-function getGoogsSorted(
+function getGoodsSorted(
   goodsList: Array<string>,
   sortBy: SortType,
   reverse: boolean,
@@ -65,7 +65,7 @@ export const App: React.FC = () => {
   const [sortBy, setSortBy] = useState<SortType>(SortType.None);
   const [reverseSort, setReverseSort] = useState<boolean>(false);
 
-  const goods = getGoogsSorted(goodsFromServer, sortBy, reverseSort);
+  const goods = getGoodsSorted(goodsFromServer, sortBy, reverseSort);
 
   function handleSortAlphabetically() {
     setSortBy((prev: SortType) =>
