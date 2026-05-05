@@ -17,9 +17,9 @@ export const goodsFromServer = [
 ];
 
 enum SortType {
-  None,
-  Alphabetically,
-  ByLength,
+  None = '',
+  Alphabetically = 'alphabetically',
+  ByLength = 'length',
 }
 
 function getGoodsSorted(
